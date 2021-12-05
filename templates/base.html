@@ -4,15 +4,21 @@
 <html lang="en">
 
 <head>
-  <title> {% block title %} Vidakali {% endblock %}</title>
+  <title> {% block title %} YouTubeClone {% endblock %} </title>
   
-  <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+  
+  <link rel="icon" type="image/png" href="{% static 'img/image.jpg' %}">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
         
-  <link href="{% static 'css/vidakali.css' %}" rel="stylesheet">
+  <link href="{% static 'css/Youtube.css' %}" rel="stylesheet">
+  <style type="text/css">
+    body{
+      background-color: #ADD8E6;
+    }
+  </style>
         
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -20,7 +26,7 @@
   
 </head>
 
-<body>
+<body >
   {% include 'includes/navbar.html' %}
 
   {% block content %}
@@ -28,6 +34,8 @@
   {% endblock %}
   
   {% include 'includes/modal.html' %}
+
+  
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       
@@ -39,7 +47,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
  
-<script src="{% static 'js/vidakali.js' %}"></script>
+<script src="{% static 'js/YT.js' %}"></script>
       
 </body>
 

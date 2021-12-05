@@ -1,8 +1,3 @@
-# Vidakali
-
-Vidakali is an open source **online video sharing and social media platform** built with Python using the Django Web Framework
-
-
 ## Technology Stack
 
 - Python 3.5

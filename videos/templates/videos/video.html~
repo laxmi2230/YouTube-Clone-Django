@@ -4,7 +4,7 @@
 
 {% load humanize %}
 
-{% block title %}  {{video.post|truncatechars:42}} - Vidakali  {% endblock %}
+{% block title %}  {{video.post|truncatechars:42}} - YouTubeClone {% endblock %}
 
 
 

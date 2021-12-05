@@ -3,7 +3,7 @@
 {% load staticfiles %} 
 
 {% load humanize %} 
-{% block title %} {{video.post|truncatechars:42}} - Vidakali {% endblock %} 
+{% block title %} {{video.post|truncatechars:42}} YouTubeClone {% endblock %} 
 
 
 {% block content %}
@@ -39,7 +39,7 @@
         {% else %}
         <a href="{% url 'profile' video.user.username %}">
           <img
-            src="{% static 'img/user.png' %}"
+            src="{% static 'img/download.jpg' %}"
             class="video-owner-pic rounded-circle float-left"
             alt="profile_pic"
           />
