@@ -36,7 +36,7 @@
       
        
         {% if user.id == page_user.id %}
-          <button  id="upload" type="button" class="float-right btn btn-outline-secondary">Upload video</button>
+          <button  id="upload" type="button" class="float-right btn btn-outline-secondary bg-warning"><b>Upload video</b></button>
         {% endif %}
        
         <div class="ml-5">
@@ -48,7 +48,7 @@
          
            <div  class="ml-4">
              {% if user.id == page_user.id %}
-              <a href="{% url 'accounts:edit_profile' %}"  role="button" class="btn btn-outline-secondary btn-sm">Edit profile</a>
+              <a href="{% url 'accounts:edit_profile' %}"  role="button" class="btn btn-outline-secondary btn-sm bg-warning"><b>Edit profile</b></a>
              {% endif %}
            </div> 
         </div>
@@ -78,7 +78,7 @@
               
             </div>
             
-            <div class="card-footer"> 
+            <div class="card-footer bg-warning"> 
               {{video.post}}  
             </div>
             

@@ -7,7 +7,7 @@
 <div class="container">
 
   <div class="row">
-    <div class="mt-5 col-md-6 offset-md-3">
+    <div class="mt-5 col-md-6 offset-md-3 bg-warning text-dark">
       {% if messages %}
         <ul class="messages">
           {% for message in messages %}
@@ -15,6 +15,7 @@
           {% endfor %}
         </ul>
       {% endif %}
+      <br>
       <form action="" method="post">
           {% csrf_token %}
           <div class="form-group">

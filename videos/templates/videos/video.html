@@ -13,7 +13,7 @@
   <div class="row">
     <div class="mt-5 col-md-8">
       <div class="card">
-        <div class="card-header">
+        <div class="card-header bg-warning">
           <small class="mr-1">uploaded : </small>
           <small class="ml-1">{{video.date|naturaltime }}</small>
         </div>
@@ -24,7 +24,7 @@
           </video>
         </div>
 
-        <div class="card-footer">{{video.post}}</div>
+        <div class="card-footer bg-warning">{{video.post}}</div>
       </div>
 
       <div class="my-4 clearfix">
@@ -49,7 +49,7 @@
           id="edit"
           data-id="{{video.id}}"
           type="button"
-          class="float-right btn btn-secondary"
+          class="float-right btn btn-warning"
         >
           Edit
         </button>
@@ -65,8 +65,8 @@
       </div>
       <button type="button" class="btn btn-success">Like</button>
       <button type="button" class="btn btn-danger">DisLike</button>
-
-      <span class="comments">Comments</span> (<span id="commentcount"
+      &nbsp;&nbsp;&nbsp;
+      <span class="comments"><b>Comments</b></span> (<span id="commentcount"
         >{{video.calculate_comments}}</span
       >)
     

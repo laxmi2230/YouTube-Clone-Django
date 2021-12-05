@@ -4,8 +4,8 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 offset-sm-3">
-        <p>Already have an account? <a href="{% url 'accounts:login' %}">Login Here!</a></p>
+      <div class="col-sm-6 offset-sm-3 bg-warning text-dark">
+        <p><b>Already have an account? </b> <a href="{% url 'accounts:login' %}">Login Here!</a></p>
         <form action="" method="post">
           {% csrf_token %}
           {% for field in form %}
@@ -17,6 +17,7 @@
           {% endfor %}
           <input type="submit" value="submit" class="btn btn-secondary">
         </form>
+        <br>
       </div>
     </div>
   </div>
